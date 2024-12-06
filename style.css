@@ -1,0 +1,835 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Libre+Franklin:wght@662&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  margin: 0;
+}
+
+
+@media (min-width: 1000px) {
+  .flex {
+    display: flex;
+  }
+  .m-1 {
+    margin: 0.5rem;
+  }
+  sup {
+    font-weight: 600;
+    font-size: xx-small;
+  }
+  .navtitle {
+    width: 11rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+  }
+  .align {
+    align-items: center;
+  }
+  nav {
+    align-items: center;
+    display: flex;
+  }
+  .nolist {
+    list-style: none;
+    display: flex;
+  }
+  #nolist {
+    cursor: pointer;
+    margin: 0rem 3rem 0rem 0rem;
+    font-size: x-large;
+  }
+  .appointment {
+    transition: all ease 0.5s;
+    background-color: rgb(23, 86, 203);
+    border-radius: 23rem;
+    padding: 1rem 1rem 1rem 1rem;
+    color: white;
+    font-weight: 900;
+    border: none;
+    box-shadow: 0 10px 7px 0 rgb(161, 161, 161);
+    cursor: pointer;
+  }
+  .appointment:active {
+    transition: all ease 0.5s;
+    box-shadow: none;
+  }
+  
+  .appointment2 {
+    transition: all ease 0.5s;
+    background-color: rgb(23, 86, 203);
+    border-radius: 23rem;
+    padding: 1rem 2rem 1.5rem 2rem;
+    margin-top: 4rem;
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+    border: none;
+    box-shadow: 0 20px 14px 0 rgb(161, 161, 161);
+    cursor: pointer;
+  }
+  .appointment2:active {
+    transition: all ease 0.5s;
+    box-shadow: none;
+  }
+  
+  .hero {
+    background-image: url("./assets/image1.png");
+    background-position: left top;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: fit-content;
+    background-color: rgba(255, 255, 255, 0.756);
+    background-blend-mode: overlay;
+  }
+  
+  .herotxt {
+    padding: 9rem;
+    text-wrap: wrap;
+    width: 40%;
+    font-size: xxx-large;
+  }
+  b {
+    font-weight: bold;
+    font-style: italic;
+  }
+  .underline {
+    text-decoration: underline;
+  }
+  .blink {
+    rotate: 45deg;
+  }
+  .footer {
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 12px;
+  }
+  
+  .div2 {
+    margin: 10rem;
+    font-size: x-large;
+    line-height: 1.5rem;
+  }
+  #para {
+    margin-bottom: 1rem;
+  }
+  #bold {
+    font-weight: bold;
+  }
+  
+  .div2h {
+    border-style: solid;
+    margin: 6rem 0rem 10rem 8rem;
+    border-width: 0rem 0rem 0rem 0.25rem;
+    border-color: red;
+    padding-left: 1rem;
+    font-size: 3.5rem;
+    font-weight: 500;
+  }
+  .div2d {
+    width: 40%;
+    line-height: 50px;
+  }
+  .expertise {
+    display: flex;
+    transition: all ease 0.5s;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    font-size: x-large;
+    border: none;
+    box-shadow: 0 20px 14px 0 rgb(161, 161, 161);
+    cursor: pointer;
+    width: 17rem;
+    margin-left: 12rem;
+  }
+  .expertise:active {
+    transition: all ease 0.5s;
+    box-shadow: none;
+  }
+  #explabel {
+    font-weight: 900;
+    text-align: left;
+    width: 80%;
+  }
+  
+  .div3 {
+    background-image: url("./assets/Spacio.png");
+    background-position: center;
+    background-origin: content-box;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+  }
+  
+  .div3h {
+    color: white;
+    font-size: 4rem;
+    font-style: italic;
+    width: 50%;
+    height: fit-content;
+    line-height: 3.5rem;
+    text-align: center;
+    margin-top: 32rem;
+    margin-left: 5rem;
+  }
+  
+  #div4 {
+    background-image: url("./assets/bg4.jpg");
+    background-position: center;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: fit-content;
+    background-color: rgba(255, 255, 255, 0.914);
+    background-blend-mode: overlay;
+  }
+  .div4h {
+    border-style: solid;
+    margin-bottom: 3rem;
+    border-width: 0rem 0rem 0rem 0.25rem;
+    border-color: red;
+    padding-left: 1rem;
+    font-size: 3.5rem;
+    font-weight: 500;
+  }
+  .div4d {
+    margin: 5rem 6rem;
+    width: 30%;
+  }
+  #div4p {
+    text-wrap: wrap;
+    font-size: larger;
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+  #list {
+    font-size: larger;
+    margin-top: 1rem;
+    margin-bottom: 8rem;
+  }
+  .div4l {
+    background-color: white;
+    border-radius: 1.5rem;
+    padding: 0.7rem 1.5rem;
+    box-shadow: 0 20px 14px 0 rgb(161, 161, 161);
+    width: fit-content;
+  }
+  #built {
+    font-size: 3.5rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+  }
+  .left {
+    rotate: 180deg;
+    padding: 20rem 5rem 20rem 5rem;
+    cursor: pointer;
+  }
+  .white {
+    color: white;
+  }
+  .right {
+    padding: 20rem 5rem 20rem 5rem;
+    cursor: pointer;
+  }
+  #p1 {
+    width: max-content;
+    padding-right: 2rem;
+  }
+  .txtsm {
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+  }
+  .map {
+    background-image: url("./assets/map.png");
+    background-position: center;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40%;
+    padding-left: 5rem;
+    padding-top: 2rem;
+  }
+  .div5 {
+    margin: 5rem auto;
+    width: 90%;
+  }
+  .div5h {
+    border-style: solid;
+    border-width: 0rem 0rem 0rem 0.25rem;
+    border-color: red;
+    padding-left: 1rem;
+    font-size: 3.5rem;
+    font-weight: 500;
+    margin-bottom: 5rem;
+  }
+  
+  .fend {
+    justify-content: space-between;
+    align-items: center;
+  }
+  #vall {
+    cursor: pointer;
+    font-size: x-large;
+    height: fit-content;
+  }
+  
+  .div6 {
+    margin: 5rem 6rem;
+  }
+  .div6h {
+    border-style: solid;
+    border-width: 0rem 0rem 0rem 0.25rem;
+    border-color: red;
+    padding-left: 1rem;
+    font-size: 3.5rem;
+    font-weight: 500;
+    margin-bottom: 5rem;
+  }
+  #post {
+    width: 100%;
+    background-image: url("./assets/logo.png");
+    height: 70%;
+    border-radius: 3rem;
+    box-shadow: 0 20px 14px 0 rgb(161, 161, 161);
+    margin-bottom: 3rem;
+  }
+  .gallery {
+    width: 100%;
+  }
+  .pcontain {
+    width: 30%;
+  }
+  .left2 {
+    rotate: 180deg;
+    padding: 10rem 0rem 10rem 5rem;
+    cursor: pointer;
+    margin-right: 0rem;
+  }
+  .right2 {
+    padding: 10rem 0rem 10rem 5rem;
+    cursor: pointer;
+    margin-left: 0rem;
+  }
+  .justify {
+    justify-content: space-between;
+  }
+  
+  .swiper {
+    width: 100%;
+    height: 400px;
+  }
+  
+  #div7 {
+    background-image: url("./assets/bg2.jpg");
+    background-position: center;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+  
+  .div7a {
+    justify-content: space-evenly;
+  }
+  #innovate {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+  }
+  #mail {
+    margin-bottom: 1rem;
+  }
+  #num {
+    margin-bottom: 3rem;
+  }
+  #career {
+    margin-bottom: 9rem;
+  }
+  #social {
+    font-weight: 1000;
+    padding-right: 2rem;
+  }
+
+  .signup {
+    display: flex;
+    transition: all ease 0.5s;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    font-size: large;
+    border: none;
+    box-shadow: 0 20px 14px 0 rgba(92, 15, 37, 0.638);
+    cursor: pointer;
+    margin-left: 1rem;
+  }
+  .signup:active {
+    transition: all ease 0.5s;
+    box-shadow: none;
+  }
+  #signup {
+    font-weight: 900;
+    text-align: left;
+    width: fit-content;
+    padding-right: 1rem;
+  }
+  input {
+    background: none;
+    border-color: white;
+    border-width: 2px;
+    border-radius: 1rem;
+    outline: none;
+    color: white;
+    font-weight: 400;
+    font-size: large;
+    padding: 0.5rem 0rem 0.5rem 1rem;
+    width: 60%;
+  }
+  input::placeholder {
+    color: rgb(181, 181, 181);
+  }
+  .div7b {
+    margin-top: 17rem;
+    width: 45%;
+  }
+  #h2 {
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 5rem;
+  }
+  footer {
+    background-color: rgb(17, 17, 17);
+    padding: 2rem 0rem 2rem 8rem;
+  }
+  #ptc {
+    list-style: none;
+    color: gray;
+  }
+  #pac {
+    transition: all ease 0.5s;
+    padding-top: 0.6rem;
+    cursor: pointer;
+  }
+  #pac:hover {
+    color: white;
+    transition: all ease 0.5s;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 700px) {
+
+  .android {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .flex {
+    display: flex;
+  }
+  .m-1 {
+    margin: 0.5rem;
+  }
+  sup {
+    font-weight: 600;
+    font-size: xx-small;
+  }
+  .navtitle {
+    font-weight: 600;
+    line-height: 1.25rem;
+  }
+  .align {
+    align-items: center;
+  }
+  nav {
+    align-items: center;
+    display: flex;
+  }
+  .nolist {
+    list-style: none;
+    display: flex;
+  }
+  #nolist {
+    cursor: pointer;
+    font-size: x-large;
+  }
+  .appointment {
+    transition: all ease 0.5s;
+    background-color: rgb(23, 86, 203);
+    border-radius: 23rem;
+    padding: 1rem 1rem 1rem 1rem;
+    color: white;
+    font-weight: 900;
+    border: none;
+    box-shadow: 0 10px 7px 0 rgb(161, 161, 161);
+    cursor: pointer;
+  }
+  .appointment:active {
+    transition: all ease 0.5s;
+    box-shadow: none;
+  }
+  
+  .appointment2 {
+    transition: all ease 0.5s;
+    background-color: rgb(23, 86, 203);
+    border-radius: 23rem;
+    padding: 1rem 2rem 1.5rem 2rem;
+    margin-top: 4rem;
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+    border: none;
+    box-shadow: 0 20px 14px 0 rgb(161, 161, 161);
+    cursor: pointer;
+  }
+  .appointment2:active {
+    transition: all ease 0.5s;
+    box-shadow: none;
+  }
+  
+  .hero {
+    background-image: url("./assets/image1.png");
+    background-position: left top;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: fit-content;
+    background-color: rgba(255, 255, 255, 0.756);
+    background-blend-mode: overlay;
+  }
+  
+  .herotxt {
+    text-wrap: wrap;
+    font-size: xxx-large;
+  }
+  b {
+    font-weight: bold;
+    font-style: italic;
+  }
+  .underline {
+    text-decoration: underline;
+  }
+  .blink {
+    rotate: 45deg;
+  }
+  .footer {
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 12px;
+  }
+  
+  .div2 {
+    font-size: x-large;
+    line-height: 1.5rem;
+  }
+  #para {
+    margin-bottom: 1rem;
+  }
+  #bold {
+    font-weight: bold;
+  }
+  
+  .div2h {
+    border-style: solid;
+    margin: 6rem 0rem 10rem 1rem;
+    border-width: 0rem 0rem 0rem 0.25rem;
+    border-color: red;
+    padding-left: 1rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+  .div2d {
+    line-height: 50px;
+  }
+  .expertise {
+    display: flex;
+    transition: all ease 0.5s;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    font-size: x-large;
+    border: none;
+    box-shadow: 0 20px 14px 0 rgb(161, 161, 161);
+    cursor: pointer;
+    width: 17rem;
+    margin-left: 4rem;
+    margin-bottom: 3rem;
+  }
+  .expertise:active {
+    transition: all ease 0.5s;
+    box-shadow: none;
+  }
+  #explabel {
+    font-weight: 900;
+    text-align: left;
+    width: 80%;
+  }
+  
+  .div3 {
+    background-image: url("./assets/Spacio.png");
+    background-position: center;
+    background-origin: content-box;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+  }
+  
+  .div3h {
+    color: white;
+    font-size: 4rem;
+    font-style: italic;
+    height: fit-content;
+    line-height: 3.5rem;
+    text-align: center;
+    margin-top: 16rem;
+  }
+  
+  #div4 {
+    background-image: url("./assets/bg4.jpg");
+    background-position: center;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: fit-content;
+    background-color: rgba(255, 255, 255, 0.914);
+    background-blend-mode: overlay;
+  }
+  .div4h {
+    border-style: solid;
+    margin-bottom: 3rem;
+    border-width: 0rem 0rem 0rem 0.25rem;
+    border-color: red;
+    padding-left: 1rem;
+    font-size: 3.5rem;
+    font-weight: 500;
+  }
+  .div4d {
+    margin: 5rem 0rem;
+    width: 50%;
+  }
+  #div4p {
+    text-wrap: wrap;
+    font-size: larger;
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+  #list {
+    font-size: larger;
+    margin-top: 1rem;
+    margin-bottom: 8rem;
+  }
+  .div4l {
+    background-color: white;
+    border-radius: 1.5rem;
+    padding: 0.7rem 1.5rem;
+    box-shadow: 0 20px 14px 0 rgb(161, 161, 161);
+    width: fit-content;
+  }
+  #built {
+    font-size: 3.5rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+  }
+  .left {
+    rotate: 180deg;
+    cursor: pointer;
+  }
+  .white {
+    color: white;
+  }
+  .right {
+    cursor: pointer;
+  }
+  #p1 {
+    width: max-content;
+    padding-right: 2rem;
+  }
+  .txtsm {
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+  }
+  .map {
+    background-image: url("./assets/map.png");
+    background-position: center;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40%;
+    padding-left: 5rem;
+    padding-top: 2rem;
+  }
+  .div5 {
+    margin: 5rem auto;
+    width: 80%;
+  }
+  .div5h {
+    border-style: solid;
+    border-width: 0rem 0rem 0rem 0.25rem;
+    border-color: red;
+    padding-left: 1rem;
+    font-size: 3.5rem;
+    font-weight: 500;
+    margin-bottom: 5rem;
+  }
+  
+  .fend {
+    justify-content: space-between;
+    align-items: center;
+  }
+  #vall {
+    cursor: pointer;
+    font-size: x-large;
+    height: fit-content;
+  }
+  
+  .div6 {
+    margin: 5rem 6rem;
+  }
+  .div6h {
+    border-style: solid;
+    border-width: 0rem 0rem 0rem 0.25rem;
+    border-color: red;
+    padding-left: 1rem;
+    font-size: 3.5rem;
+    font-weight: 500;
+    margin-bottom: 5rem;
+  }
+  #post {
+    width: 100%;
+    background-image: url("./assets/logo.png");
+    height: 70%;
+    border-radius: 3rem;
+    box-shadow: 0 20px 14px 0 rgb(161, 161, 161);
+    margin-bottom: 3rem;
+  }
+  .gallery {
+    width: 100%;
+  }
+  .pcontain {
+    width: 30%;
+  }
+  .left2 {
+    rotate: 180deg;
+    padding: 10rem 0rem 10rem 5rem;
+    cursor: pointer;
+    margin-right: 0rem;
+  }
+  .right2 {
+    padding: 10rem 0rem 10rem 5rem;
+    cursor: pointer;
+    margin-left: 0rem;
+  }
+  .justify {
+    justify-content: space-between;
+  }
+  
+  .swiper {
+    width: 100%;
+    height: 300px;
+  }
+  
+  #div7 {
+    background-image: url("./assets/bg2.jpg");
+    background-position: center;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+  
+  .div7a {
+    justify-content: space-evenly;
+  }
+  #innovate {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+  }
+  #mail {
+    margin-bottom: 1rem;
+  }
+  #num {
+    margin-bottom: 3rem;
+  }
+  #career {
+    margin-bottom: 9rem;
+  }
+  #social {
+    font-weight: 1000;
+    padding-right: 2rem;
+  }
+  .signup {
+    display: flex;
+    transition: all ease 0.5s;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    font-size: large;
+    border: none;
+    box-shadow: 0 20px 14px 0 rgba(92, 15, 37, 0.638);
+    cursor: pointer;
+    margin-left: 1rem;
+  }
+  .signup:active {
+    transition: all ease 0.5s;
+    box-shadow: none;
+  }
+  #signup {
+    font-weight: 900;
+    text-align: left;
+    width: fit-content;
+    padding-right: 1rem;
+  }
+  input {
+    background: none;
+    border-color: white;
+    border-width: 2px;
+    border-radius: 1rem;
+    outline: none;
+    color: white;
+    font-weight: 400;
+    font-size: large;
+    padding: 0.5rem 0rem 0.5rem 1rem;
+    width: 60%;
+  }
+  input::placeholder {
+    color: rgb(181, 181, 181);
+  }
+  .div7b {
+    margin-top: 17rem;
+    width: 45%;
+  }
+  #h2 {
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 5rem;
+  }
+  footer {
+    background-color: rgb(17, 17, 17);
+    padding: 2rem 0rem;
+  }
+  #ptc {
+    list-style: none;
+    color: gray;
+  }
+  #pac {
+    transition: all ease 0.5s;
+    padding-top: 0.6rem;
+    cursor: pointer;
+  }
+  #pac:hover {
+    color: white;
+    transition: all ease 0.5s;
+  }
+}
